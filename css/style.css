@@ -4223,6 +4223,14 @@ button.swiper-pagination-bullet {
 @media (max-width: 424.98px) {
   .header .language {
     display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header__top-right-link {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .header__logo {
