@@ -4093,6 +4093,12 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .menu__arrow{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .intro__deco-arrow {
     left: 65%;
   }
