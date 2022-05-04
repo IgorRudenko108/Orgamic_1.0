@@ -3744,6 +3744,7 @@ button.swiper-pagination-bullet {
   .header__top-right-link {
     margin-bottom: 0;
     font-size: 18px;
+    color: #000;
   }
 
   .header__social-link {
