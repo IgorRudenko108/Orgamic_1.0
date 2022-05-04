@@ -2736,18 +2736,15 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .tabs__card-wrapper {
   width: 33.333%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.333%;
-          flex: 1 1 33.333%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2775,12 +2772,15 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border: 3px solid #DDD;
   height: 100%;
   padding-top: 20px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .tabs__card:hover {
@@ -2797,14 +2797,24 @@ button.swiper-pagination-bullet {
   transition: all 0.3s ease;
 }
 
-.tabs__card > img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  padding: 0 10px;
+.tabs__card-img-box {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.tabs__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  padding: 10px;
   max-width: 100%;
 }
 
