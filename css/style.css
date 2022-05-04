@@ -4233,7 +4233,7 @@ button.swiper-pagination-bullet {
     visibility: hidden;
   }
 
-  .header__top-right-link {
+  .language.header__top-right-link {
     display: none;
     opacity: 0;
     visibility: hidden;
